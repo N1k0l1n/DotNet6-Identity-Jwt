@@ -14,7 +14,7 @@ This project is a .NET 6 application showcasing a robust authentication system u
 
 To run this project locally, follow these steps:
 
-### Prerequisites
+## Prerequisites
 
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
@@ -26,7 +26,7 @@ To run this project locally, follow these steps:
 Configure necessary environment variables such as database connection strings, secret keys, etc.
 
 
-###Run the application:
+##Run the application:
 
 bash
 Copy code
