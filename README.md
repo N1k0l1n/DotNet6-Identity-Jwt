@@ -21,7 +21,7 @@ To run this project locally, follow these steps:
 
 
 
-###Set up environmental variables (if applicable):
+##Set up environmental variables (if applicable):
 
 Configure necessary environment variables such as database connection strings, secret keys, etc.
 
