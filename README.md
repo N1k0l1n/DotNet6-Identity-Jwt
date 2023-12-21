@@ -19,16 +19,14 @@ To run this project locally, follow these steps:
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-
-
-##Run the application:
+## Run the application:
 
 bash
 Copy code
 dotnet run
 The application should now be running on localhost:5000.
 
-##Usage
+## Usage
 Register: Create a new user account using the provided registration endpoint.
 Login: Obtain an access token and a refresh token upon successful login.
 Protected Routes: Access endpoints that require authentication by providing the generated JWT token in the request headers.
@@ -36,7 +34,7 @@ Refresh Tokens: Refresh access tokens using refresh tokens to extend authenticat
 Contribution
 Contributions are welcome! If you'd like to contribute to this project, fork the repository, make your changes, and submit a pull request.
 
-##License
+## License
 This project is licensed under the MIT License.
 Feel free to customize this template according to your project's specifics, including more detailed setup instructions, API endpoints, or any additional features!
 
