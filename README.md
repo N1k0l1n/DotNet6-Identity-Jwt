@@ -19,41 +19,7 @@ To run this project locally, follow these steps:
 - [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-### Installation
 
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-project.git
-
-Sure, here's a sample README.md file for a .NET 6 project focusing on refresh token login, identity, SQL Server, JWT authentication, and protected routes:
-
-markdown
-Copy code
-
-
-
-### Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/your-project.git
-   
-2.Navigate to the project directory:
-
-bash
-Copy code
-cd your-project
-Set up the database:
-
-Modify the connection string in appsettings.json to point to your SQL Server instance.
-Run the following commands in the terminal:
-bash
--Copy code
--dotnet tool install --global dotnet-ef
--dotnet ef database update
--Running the Application
 
 ###Set up environmental variables (if applicable):
 
