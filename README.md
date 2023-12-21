@@ -30,26 +30,8 @@ Sure, here's a sample README.md file for a .NET 6 project focusing on refresh to
 
 markdown
 Copy code
-# .NET 6 Project: Refresh Token Login with Identity, SQL Server, JWT, and Protected Routes
 
-This project is a .NET 6 application showcasing a robust authentication system using refresh tokens, Identity framework, SQL Server for data storage, JWT authentication, and protected routes.
 
-## Features
-
-- **Refresh Token Login**: Implementing a secure login system using refresh tokens for extended authentication sessions.
-- **Identity Framework**: Leveraging .NET's Identity framework for managing users, roles, and authentication.
-- **SQL Server**: Utilizing SQL Server as the database to store user information and authentication data securely.
-- **JWT Authentication**: Implementing JSON Web Tokens (JWT) for secure authentication and authorization of users.
-- **Protected Routes**: Configuring routes that require authentication and authorization, ensuring secure access to specific endpoints.
-
-## Setup Instructions
-
-To run this project locally, follow these steps:
-
-### Prerequisites
-
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-- [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 ### Installation
 
