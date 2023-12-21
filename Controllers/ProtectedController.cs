@@ -3,10 +3,11 @@ using MoviesApisBack.DTOs;
 
 namespace MoviesApisBack.Controllers
 {
-    [Route("api/[controller]/{action}")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProtectedController : ControllerBase
     {
+        [HttpGet]
         public IActionResult GetData()
         {
             var status = new Status();

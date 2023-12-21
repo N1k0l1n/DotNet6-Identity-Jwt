@@ -4,11 +4,12 @@ using MoviesApisBack.DTOs;
 
 namespace MoviesApisBack.Controllers
 {
-    [Route("api/[controller]/{action}")]
+    [Route("api/[controller]")]
     [ApiController]
     [Authorize(Roles = "Admin")]
     public class AdminController : ControllerBase
     {
+        [HttpGet]
         public IActionResult GetData()
         {
             var status = new Status();

@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace MoviesApisBack.Controllers
 {
-    [Route("api/[controller]/{action}")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AuthorizationController : ControllerBase
     {
@@ -29,7 +29,7 @@ namespace MoviesApisBack.Controllers
             this._tokenService = tokenService;
         }
 
-        [HttpPost]
+        [HttpPost("ChangePassword")]
         public async Task<IActionResult> ChangePassword(ChangePasswordModel model)
         {
             var status = new Status();
@@ -69,7 +69,8 @@ namespace MoviesApisBack.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
+        [HttpPost("Login")]
+
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             // Finding the user by username using UserManager
@@ -155,7 +156,22 @@ namespace MoviesApisBack.Controllers
                 });
         }
 
-        [HttpPost]
+        /// <summary>
+        /// Register a new user.
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// {
+        ///     "name": "John Doe",
+        ///     "username": "johndoe",
+        ///     "password": "StrongP@ss123",
+        ///     "email": "johndoe@example.com"
+        /// }
+        /// </remarks>
+        /// <param name="model">Registration information</param>
+        /// <response code="200">Returns status indicating successful registration</response>
+        /// <response code="400">If the request is invalid or registration fails</response>
+        [HttpPost("Registration")]
         public async Task<IActionResult> Registration([FromBody] RegistrationModel model)
         {
             var status = new Status();

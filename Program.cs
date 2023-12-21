@@ -17,11 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Database Connection
-builder.Services.AddDbContext<DatabaseContext>(options =>
-{
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("conn")));
 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"));
-});
 
 // For Identity  
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

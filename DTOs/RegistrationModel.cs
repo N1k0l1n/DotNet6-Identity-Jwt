@@ -11,6 +11,8 @@ namespace MoviesApisBack.DTOs
         public string? Username { get; set; }
 
         [Required]
+        [DataType(DataType.Password)]
+        [RegularExpression(@"^Pa55w0rd!$", ErrorMessage = "Password must be 'Pa55w0rd!' exactly.")]
         public string? Password { get; set; }
 
         [EmailAddress]

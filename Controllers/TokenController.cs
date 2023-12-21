@@ -19,7 +19,7 @@ namespace MoviesApisBack.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPost("RefreshToken")]
         public IActionResult Refresh(RefreshTokenRequest tokenApiModel)
         {
             if (tokenApiModel is null)
@@ -57,7 +57,8 @@ namespace MoviesApisBack.Controllers
         }
 
         // Endpoint for revoking tokens (requiring authorization)
-        [HttpPost, Authorize]
+        [HttpPost("Revoke")]
+        [Authorize]
         public IActionResult Revoke()
         {
             try
